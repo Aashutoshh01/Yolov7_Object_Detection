@@ -1,0 +1,7 @@
+train: /home/ubuntu/Object_Detection_Yolov7_Project/train.txt
+val: /home/ubuntu/Object_Detection_Yolov7_Project/val.txt
+
+nc: 2
+
+# class names
+names: ['1', 'pepperonipizza']
