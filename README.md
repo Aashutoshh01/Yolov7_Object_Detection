@@ -52,8 +52,37 @@ Use the following command in a code cell to run inference on a video:
 - Adjust --project and --name to control where the output video will be saved.
 
 ## 📊 6. Results Visualization and Analysis
+
+#### 1. Training & Validation Metrics
+- Box / Objectness / Classification Loss (Train & Val): Consistently decreasing trends, indicating stable model convergence. Minimal overfitting as validation losses follow training losses closely.
+- Precision / Recall: Both reach near 1.0 quickly and remain stable, demonstrating highly accurate predictions.
+- mAP@0.5 and mAP@0.5:0.95: Show a steady improvement, indicating that the model generalizes well across different IoU thresholds.
+
+#### 2. F1 Score vs Confidence
+- Peak F1 Score at ~0.73 Confidence: The model achieves optimal balance between precision and recall at this threshold.
+- Smooth Curve: Minimal fluctuation across classes, suggesting consistent model behavior and low variance across predictions.
+
+#### 3. Precision vs Confidence
+- Precision Remains High: Above 90% across almost the full range of confidence scores.
+- Low False Positives: Indicates the model is conservative with predictions, leading to fewer incorrect detections.
+
+#### 4. Recall vs Confidence
+- Recall Close to 1.0: Even at lower confidence levels, the model identifies most true objects.
+- Drop-off at High Confidence: Typical in object detection, as stricter confidence thresholds reduce recall.
+
+#### 5. Precision vs Recall (PR Curve)
+- Near-Perfect Curve: All classes lie very close to the top-right corner indicating excellent precision-recall tradeoff.
+- mAP@0.5 ≈ 0.997: Confirms high performance of the model during evaluation.
+
 ## 🔎 7. Inference Video Insights
+
+- The model detects pizza slices accurately under varied lighting and backgrounds.
+- Real-time inference was smooth and robust.
+- Occasional misdetections occurred only at extreme occlusions.
+
 ## 🧠 8. Conclusion
 ## 📜 9. License
 
 Open-source for learning purposes. Use and modify freely.
+- This work is built using YOLOv7.
+- CUDA acceleration used for training and inference.
