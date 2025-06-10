@@ -144,6 +144,7 @@ Use the following command in a code cell to run inference on a video:
 
 ## 🔎 8. Inference Video Insights
 
+[![Watch the demo video](https://raw.githubusercontent.com/Aashutoshh01/Yolov7_Object_Detection/main/Results/yolov7_thumbnail.png)](https://raw.githubusercontent.com/Aashutoshh01/Yolov7_Object_Detection/main/Results/demo.mpy)
 - The model detects pizza slices accurately under varied lighting and backgrounds.
 - Real-time inference was smooth and robust.
 - Occasional misdetections occurred only at extreme occlusions.
