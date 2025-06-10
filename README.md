@@ -12,9 +12,8 @@ This repository demonstrates a complete pipeline for training and applying an ob
 - **Training Environment:** AWS EC2 GPU instance – `g4dn.xlarge`
 
 ## 📁 Project Structure
-
-Object_Detection_Yolov7_Project/
 ```
+Object_Detection_Yolov7_Project/
 ├── dataset/
 │   └── images/
 │       ├── train/
