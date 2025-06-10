@@ -152,6 +152,11 @@ Use the following command in a code cell to run inference on a video:
 - Occasional misdetections occurred only at extreme occlusions.
 
 ## 🧠 9. Conclusion
+
+- The YOLOv7 model, fine-tuned on custom data, delivered high precision and recall.
+- F1 and PR curves validate balanced performance.
+- Excellent generalization on unseen data and video.
+
 ## 📜 10. License
 
 Open-source for learning purposes. Use and modify freely.
