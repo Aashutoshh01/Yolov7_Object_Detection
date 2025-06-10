@@ -54,23 +54,33 @@ Use the following command in a code cell to run inference on a video:
 ## 📊 6. Results Visualization and Analysis
 
 #### 1. Training & Validation Metrics
+
+![Results Summary](./results/results.png)
 - Box / Objectness / Classification Loss (Train & Val): Consistently decreasing trends, indicating stable model convergence. Minimal overfitting as validation losses follow training losses closely.
 - Precision / Recall: Both reach near 1.0 quickly and remain stable, demonstrating highly accurate predictions.
 - mAP@0.5 and mAP@0.5:0.95: Show a steady improvement, indicating that the model generalizes well across different IoU thresholds.
 
 #### 2. F1 Score vs Confidence
+
+![F1 Score Curve](./results/F1_curve.png)
 - Peak F1 Score at ~0.73 Confidence: The model achieves optimal balance between precision and recall at this threshold.
 - Smooth Curve: Minimal fluctuation across classes, suggesting consistent model behavior and low variance across predictions.
 
 #### 3. Precision vs Confidence
+
+![Precision Curve](./results/P_curve.png)
 - Precision Remains High: Above 90% across almost the full range of confidence scores.
 - Low False Positives: Indicates the model is conservative with predictions, leading to fewer incorrect detections.
 
 #### 4. Recall vs Confidence
+
+![Recall Curve](./results/R_curve.png)
 - Recall Close to 1.0: Even at lower confidence levels, the model identifies most true objects.
 - Drop-off at High Confidence: Typical in object detection, as stricter confidence thresholds reduce recall.
 
 #### 5. Precision vs Recall (PR Curve)
+
+![PR Curve](./results/PR_curve.png)
 - Near-Perfect Curve: All classes lie very close to the top-right corner indicating excellent precision-recall tradeoff.
 - mAP@0.5 ≈ 0.997: Confirms high performance of the model during evaluation.
 
