@@ -3,6 +3,14 @@
 This repository demonstrates a complete pipeline for training and applying an object detection model using YOLOv7. It includes model training, inference on video files, result analysis, and insight extraction.
 
 ---
+
+## 📦 Resources
+
+- **Trained Weights:** [Download best.pt](../../releases/latest)  
+- **Training Logs:** See below for detailed metrics and results  
+- **Dependencies & Setup:** Refer to instructions in this README  
+- **Training Environment:** AWS EC2 GPU instance – `g4dn.xlarge`
+  
 ## 📦 Setup Instructions
 
 ### 1. Create Python Environment (Python 3.9)
