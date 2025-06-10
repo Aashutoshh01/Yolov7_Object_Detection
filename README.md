@@ -10,7 +10,30 @@ This repository demonstrates a complete pipeline for training and applying an ob
 - **Training Logs:** See below for detailed metrics and results  
 - **Dependencies & Setup:** Refer to instructions in this README  
 - **Training Environment:** AWS EC2 GPU instance – `g4dn.xlarge`
-  
+
+## 📁 Project Structure
+
+Object_Detection_Yolov7_Project/
+```
+├── dataset/
+│   └── images/
+│       ├── train/
+│       └── val/
+|       └── test/
+│   └── labels/
+│       ├── train/
+│       └── val/
+|       └── test/
+├── yolov7/
+│   ├── cfg/training/
+│   │   └── custom_yolov7.yaml
+│   ├── data/
+│   │   └── custom.yaml
+│   └── yolov7.pt
+├── train.txt
+└── val.txt
+```
+
 ## 📦 Setup Instructions
 
 ### 1. Create Python Environment (Python 3.9)
