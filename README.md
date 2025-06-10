@@ -51,7 +51,35 @@ Use the following command in a code cell to run inference on a video:
 
 - Adjust --project and --name to control where the output video will be saved.
 
-## 📊 6. Results Visualization and Analysis
+## 📈 6. Training Results
+
+### 📊 Overall Metrics (Final Epoch)
+
+| Metric         | Value     |
+|----------------|-----------|
+| **Precision**  | 0.997     |
+| **Recall**     | 0.996     |
+| **mAP@0.5**    | 0.997     |
+| **mAP@0.5:0.95** | 0.867   |
+
+---
+
+### 🔍 Per-Class Performance
+
+| Class           | Precision | Recall | mAP@0.5 | mAP@0.5:0.95 |
+|------------------|-----------|--------|---------|---------------|
+| **1**             | 0.993     | 1.000  | 0.995   | 0.931         |
+| **pepperonipizza**| 1.000     | 0.992  | 0.998   | 0.804         |
+
+---
+
+### 🧠 Highlights
+
+- 📈 **mAP@0.5 improved** from 0.235 to 0.997 over 25 epochs.
+- ⚡ **Early convergence** observed around epoch 10.
+- ✅ **No overfitting** was observed throughout training.
+
+## 📊 7. Results Visualization and Analysis
 
 #### 1. Training & Validation Metrics
 
@@ -84,14 +112,14 @@ Use the following command in a code cell to run inference on a video:
 - Near-Perfect Curve: All classes lie very close to the top-right corner indicating excellent precision-recall tradeoff.
 - mAP@0.5 ≈ 0.997: Confirms high performance of the model during evaluation.
 
-## 🔎 7. Inference Video Insights
+## 🔎 8. Inference Video Insights
 
 - The model detects pizza slices accurately under varied lighting and backgrounds.
 - Real-time inference was smooth and robust.
 - Occasional misdetections occurred only at extreme occlusions.
 
-## 🧠 8. Conclusion
-## 📜 9. License
+## 🧠 9. Conclusion
+## 📜 10. License
 
 Open-source for learning purposes. Use and modify freely.
 - This work is built using YOLOv7.
